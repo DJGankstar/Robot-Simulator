@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../styles/App.css';  // Import the main stylesheet for the app
 import Grid from './Grid';   // Import the Grid component
 import Robot from './Robot'; // Import the Robot control component
+import { ReactComponent as Logo } from '../logo.svg'; // Import the SVG as a React component
 
 function App() {
   // Initialize state to track the robot's position and direction
@@ -29,8 +30,11 @@ function App() {
 
   return (
     <div className="app-container">
-      {/* Application Title */}
-      <h1 className="title">Robot Simulator</h1>
+      {/* Application Title with Logo */}
+      <h1 className="title">
+        <Logo className="logo" /> {/* SVG Logo */}
+        Simulator
+      </h1>
 
       {/* Container for the Grid and Robot controls */}
       <div className="content-container">
