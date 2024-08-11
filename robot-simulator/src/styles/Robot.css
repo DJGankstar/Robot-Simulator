@@ -1,26 +1,28 @@
 .control-panel {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
     background-color: #ffffff;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
   }
   
   .control-button {
     padding: 12px 20px;
-    background-color: #007bff;
+    background-color: #e15a1d; /* Updated color */
     color: #ffffff;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
   }
   
   .control-button:hover {
-    background-color: #0056b3;
+    background-color: #b04919; /* Darker shade of #e15a1d for hover state */
+    transform: translateY(-2px);
   }
   
