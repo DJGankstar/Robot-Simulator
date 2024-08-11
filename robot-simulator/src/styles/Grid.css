@@ -1,0 +1,30 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 80px);
+    grid-template-rows: repeat(5, 80px);
+    gap: 8px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cell {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    color: #333;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    border: 2px solid #e0e0e0;
+  }
+  
+  .cell.robot {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
