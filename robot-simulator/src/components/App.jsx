@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../styles/App.css';  // Import the main stylesheet for the app
 import Grid from './Grid';   // Import the Grid component
 import Robot from './Robot'; // Import the Robot control component
-import { ReactComponent as Logo } from '../logo.svg'; // Import the SVG as a React component
+import Logo from '../logo.svg?react'; // Import the SVG as a React component
 
 function App() {
   // Initialize state to track the robot's position and direction

@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+# Robot Simulator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React simulator with a robot on a 5×5 grid. Choose a cardinal direction, then Move. Movement stops at grid edges; coordinates start at the top-left.
 
-## Available Scripts
+## Development
 
-In the project directory, you can run:
+Use Node.js 22.12 or newer (Node 24 recommended).
 
-### `npm start`
+```sh
+npm ci
+npm start
+npm test
+npm run build
+npm run preview
+npm run audit
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Vite serves development on port 5173. Production output remains `build/` for compatibility with existing static hosting. Run commands from `robot-simulator/`, not the repository root. Relative asset paths support hosting under a subdirectory.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Security maintenance
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The legacy Create React App / react-scripts toolchain was replaced with Vite and Vitest to remove vulnerable transitive dependencies. The original simulator styles and movement behaviour are preserved. GitHub CI installs the lockfile, audits dependencies, tests movement and builds the app. Dependabot checks npm dependencies weekly. A clean audit is a point-in-time result, not a guarantee against future advisories.
